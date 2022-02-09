@@ -13,7 +13,7 @@ $(document).ready(function () {
         $box.height($box.children().first().outerHeight(true));
     }
 
-    setTimeout(settingHeights, 100);
+    setTimeout(settingHeights, 0);
 
     let currentZarib = 0; 
 
@@ -104,8 +104,7 @@ $(document).ready(function () {
             }
             return priceKeyframe;
         }
-        console.log(liHeight)
-        console.log(priceAnimation(0));
+        //price animations
         to(".wrapper ul:nth-child(2)", {keyframes: priceAnimation(0), ease: "power1.out"});
         to(".wrapper ul:nth-child(3)", {keyframes: priceAnimation(1), ease: "power1.out"});
 
